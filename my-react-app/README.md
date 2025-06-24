@@ -1,12 +1,49 @@
-# React + Vite
+# 📝 PLP Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully-responsive task-manager built with **React 18**, **Tailwind CSS v4.1**, **Vite**, and **React Router DOM**.  
+Created as part of the **Power Learn Project (PLP) Week 3 React assignment**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📚 Assignment Checklist
 
-## Expanding the ESLint configuration
+| Task | What was built |
+|------|----------------------------------------------------------------------------------------------------------------------------------|
+| **1. Project Setup** | Vite + React + Tailwind v4.1.  Clean folder structure (`components/`, `pages/`, `hooks/`, `context/`, `api/`, `utils/`). |
+| **2. Component Architecture** | Reusable `Button`, `Navbar`, `Footer`, and `TaskManager` components with props for style variants. |
+| **3. State Management & Hooks** | Custom hook `useLocalStorageTasks` (persist tasks).  Theme managed via `useTheme` (`ThemeContext`). |
+| **4. API Integration** | Fetches random users with **Random User API** from `src/api/fetchUsers.js`; displayed in `UserList`. |
+| **5. Styling w/ Tailwind** | Mobile–tablet–desktop responsive, dark-mode toggle, utility-class layout & spacing, custom **fade-in** animation. |
+| **Routing** | Configured with `react-router-dom`: `/` (Home) and `/about`. |
+| **Extra** | Counter demo, local-storage persistence, hover transitions, fully accessible buttons and inputs. |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Live Demo
+
+🔗 **Deployed URL →** [TODO add your link (Vercel / Netlify / GH Pages)]()
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# 1. Clone
+git clone https://github.com/YOUR-USERNAME/plp-task-manager.git
+cd plp-task-manager
+
+# 2. Install dependencies
+pnpm install
+
+# 3. Run dev server
+pnpm dev        # -> http://localhost:5173
+src/
+├── api/               # API functions (e.g. fetchUsers.js)
+├── components/        # Re-usable UI (Navbar, Footer, Button, TaskManager, UserList)
+├── context/           # ThemeContext (light/dark)
+├── hooks/             # Custom hooks (useLocalStorageTasks, useTheme)
+├── pages/             # Routed pages (Home.jsx, About.jsx)
+├── utils/             # Helper functions (formatDate.js)
+├── App.jsx            # Holds <Routes>
+└── main.jsx           # ReactDOM.createRoot, wrapped with <BrowserRouter>
+
