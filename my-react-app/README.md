@@ -21,7 +21,7 @@ Created as part of the **Power Learn Project (PLP) Week 3 React assignment**.
 
 ## ✨ Live Demo
 
-🔗 **Deployed URL →** [TODO add your link (Vercel / Netlify / GH Pages)]()
+🔗 **Deployed URL →** [https://alfred-week-3.netlify.app/]
 
 ---
 
